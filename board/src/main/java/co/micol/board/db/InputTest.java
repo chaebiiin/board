@@ -60,14 +60,42 @@ public class InputTest {
 
 	private void memberUpdate() { //입력해보기
 		
-		
+		System.out.println("업데이트 할 회원 정보를 입력하세요.");
+		vo = new  MemberVo();
+		System.out.print("수정할 아이디 : ");
+		vo.setId(sc.next());
+		System.out.print("변경될 패스워드 : ");
+		vo.setPassword(sc.next());
+		System.out.print("변경될 이름 : ");
+		vo.setName(sc.next());
+		System.out.print("변경될 전화번호 : ");
+		vo.setTel(sc.next());
+		int n = dao.update(vo);
+		if(n != 0 ) {
+			System.out.println("수정 되었습니다.");
+		}else {
+			System.out.println("실패 되었습니다.");
+		}		
 	}
 
 	private void memberInput() { //입력하기
-		boolean bool = true;
-		System.out.println("입력 할 회원 아아디를 입력하세요.");
+		System.out.println("입력 할 회원 정보를 입력하세요.");
 		vo = new  MemberVo();
+		System.out.print("아이디 : ");
 		vo.setId(sc.next());
+		System.out.print("패스워드 : ");
+		vo.setPassword(sc.next());
+		System.out.print("이름 : ");
+		vo.setName(sc.next());
+		System.out.print("전화번호 : ");
+		vo.setTel(sc.next());
+		int n = dao.insert(vo);
+		if(n != 0 ) {
+			System.out.println("입력 되었습니다.");
+		}else {
+			System.out.println("실패 되었습니다.");
+		}
+		
 	}
 
 	private void memberSelect() {

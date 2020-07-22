@@ -53,15 +53,15 @@ public class App {
 //		}
 		
 		//delete 실행
-		vo = new MemberVo();
-		vo.setId("soyee");
-		dao.delete(vo);
-		
-		int o = dao.update(vo);
-		if (o != 0) {
-			System.out.println("정상적 삭제");
-		} else {
-			System.out.println("삭제 실패");
-		}
+//		vo = new MemberVo();
+//		vo.setId("soyee");
+//		dao.delete(vo);
+//		
+//		int o = dao.update(vo);
+//		if (o != 0) {
+//			System.out.println("정상적 삭제");
+//		} else {
+//			System.out.println("삭제 실패");
+//		}
 	}
 }
