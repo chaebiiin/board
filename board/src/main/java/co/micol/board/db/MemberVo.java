@@ -1,4 +1,4 @@
-package co.micol.db;
+package co.micol.board.db;
 
 public class MemberVo {
 	private String id;
@@ -8,8 +8,8 @@ public class MemberVo {
 	
 	public MemberVo() {
 		super();
-	
 	}
+	
 	public String getId() {
 		return id;
 	}
@@ -39,6 +39,7 @@ public class MemberVo {
 		System.out.println("패스워드:  " + getPassword());
 		System.out.println("이름:  " + getName());
 		System.out.println("전화번호:  " + getTel());		
-		return null;
+		
+		return null; //??
 	}
 }
